@@ -1,2 +1,2 @@
 # WebcursoJSJQuery
-Proyecto de JavaScript y jQuery
+Proyecto para repasar JavaScript y jQuery
