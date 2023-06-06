@@ -18,7 +18,7 @@ body {
     margin: 0px auto;
     margin-top: 30px;
     background: white;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0px 0px 2px 
     grey;
 }
@@ -105,5 +105,35 @@ body {
     margin-top: 10px;
     display: block;
     width: 75px;
+    margin-bottom: 20px;
+ }
+
+ #sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 31%;
+    float: right;
+ }
+ #sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url(../img/lines.png) repeat-x;
     
+ }
+
+ #sidebar h4 span {
+    background: white;
+    padding: 5px;
+ }
+
+ #sidebar img {
+    width: 100%;
+
+ }
+
+ #sidebar p {
+    font-size: 15px;
+    text-align: justify;
  }
