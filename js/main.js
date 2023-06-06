@@ -69,5 +69,28 @@ $(document).ready(function () {
             scrollTop:0
         } ,500);
         return false;
-    })
+    });
+
+    //Login falso
+
+    $('#login form').submit(function(){
+       let form_name =  $('#form_name').val();
+
+       localStorage.setItem('form_name', form_name);
+    });
+
+    let form_name = localStorage.getItem('form_name');
+    if (form_name != null && form_name != 'undefined') {
+        let about_p = $('#about p');
+        about_p.html('<br><strong>Bienvenido, ' + form_name + '</strong>');
+        about_p.append("<a href='#' id='logout'>Cerrar sesión</a>");      
+
+       $('#login').hide();
+
+       $('#logout').click(function(){
+        localStorage.clear();
+        location.reload();
+    });
+}
+    
 });
