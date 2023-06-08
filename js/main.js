@@ -112,7 +112,9 @@ if (window.location.href.indexOf('reloj') > -1) {
         dateFormat:'dd-MM-YYYY'
     });
     $.formUtils.addValidator({
-    lang:'es'
+    lang:'es',
+    errorMessagePosition: 'top',
+    scrollToTopOnError:true
 });
   }
 });
