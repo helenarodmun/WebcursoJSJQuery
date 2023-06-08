@@ -95,9 +95,16 @@ $(document).ready(function () {
         location.reload();
     });
 }
-
+//Acordeón
 if (window.location.href.indexOf('about') > -1) {
     $('#acordeon').accordion();
+}
+//Reloj
+if (window.location.href.indexOf('reloj') > -1) {
+    setInterval(function() {
+        let reloj = moment().format('hh:mm:ss');
+        $('#reloj').html(reloj);
+    }, 1000)
 }
     
 });
