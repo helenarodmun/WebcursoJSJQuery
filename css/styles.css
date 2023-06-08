@@ -69,9 +69,10 @@
 .post {
     padding: 7px;
 }
- .post h2{
+  h2{
     font-size: 30px;
     color: #333;
+    font-family: Arial, Helvetica, sans-serif;    
  }
 
  .post .date {
@@ -199,4 +200,13 @@
         float: right;
     }
 
+    #box {
+      width: 60%;
+      float: left;
+      margin-top: 40px;
+    }
+
+    #acordeon {
+      margin-top: 20px;
+    }
 

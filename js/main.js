@@ -1,15 +1,18 @@
 $(document).ready(function () {
 
     //Slider
-    $('.gallery').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 1200,
-        responsive: true
-    });
+    if (window.location.href.indexOf('index') > -1) {
+        $('.gallery').bxSlider({
+            mode: 'fade',
+            captions: true,
+            slideWidth: 1200,
+            responsive: true
+        });
+     
+    }
 
     //Posts
-
+    if (window.location.href.indexOf('index') > -1) {
     var posts = [{
         title: 'Prueba de título',
         date: 'Publicado el día ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
@@ -48,7 +51,7 @@ $(document).ready(function () {
 
         $('#posts').append(post);
     });
-
+    }
     //Selector de tema
     let theme = $('#theme')
     $('#to-green').click(function(){
@@ -91,6 +94,10 @@ $(document).ready(function () {
         localStorage.clear();
         location.reload();
     });
+}
+
+if (window.location.href.indexOf('about') > -1) {
+    $('#acordeon').accordion();
 }
     
 });
