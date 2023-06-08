@@ -106,5 +106,13 @@ if (window.location.href.indexOf('reloj') > -1) {
         $('#reloj').html(reloj);
     }, 1000)
 }
-    
+  //Validación formulario 
+  if (window.location.href.indexOf('contact') > -1) {
+    $("form input[name='date']").datepicker({
+        dateFormat:'dd-MM-YYYY'
+    });
+    $.formUtils.addValidator({
+    lang:'es'
+});
+  }
 });
